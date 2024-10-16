@@ -1,5 +1,5 @@
 # Proxy frontend React app
-:80 {
+harshith.info {
     reverse_proxy frontend:80
 }
 

@@ -1,0 +1,6 @@
+# Proxy frontend React app
+:80 {
+    reverse_proxy frontend:80
+}
+
+

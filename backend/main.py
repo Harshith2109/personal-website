@@ -14,7 +14,7 @@ app = FastAPI()
 
 origins = [
 
-    "*",
+    "https://hashith.info",
     
 ]
 
@@ -44,7 +44,7 @@ def addRespone(item: Response, db: Session = Depends(get_db)):
     return create_item(db=db, item=item)
 
 
-@app.get("/contacts/")
+@app.get("/contacts_details/")
 def addRespone(db: Session = Depends(get_db)):
     return view(db=db)
 

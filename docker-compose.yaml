@@ -13,8 +13,8 @@ services:
       context: ./backend
     container_name: backend-container
     restart: unless-stopped
-    ports:
-      - "8000:8000"
+    # ports:
+    #   - "8000:8000"
     volumes:
       - ./db_data/data.db:/backend/Response.db  # Map local folder for database
     networks:

@@ -2,6 +2,9 @@
 harshith.info {
     reverse_proxy frontend:80
 }
+harshith.info/contacts/ {
+    reverse_proxy backend:8000
+}
 
 harshith.info/contacts/{
     reverse_proxy backend:8000/contacts/
